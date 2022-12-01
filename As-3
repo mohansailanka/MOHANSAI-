@@ -1,0 +1,7 @@
+Year=int(input())
+If year%4==0 and year%100!=0:
+Print ("leap year")
+Elif year%400==0:
+Print ("leap year")
+Else
+Print ("not a leap year")
