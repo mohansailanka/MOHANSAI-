@@ -1,0 +1,6 @@
+adc=[]
+adc.append('amalapurm')
+adc.append('kakinada')
+adc.append('srikakulam')
+adc.append('vskp')
+print(adc)
