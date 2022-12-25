@@ -1,0 +1,18 @@
+max = 0
+min = 999
+l1 = list()
+
+while (True):
+    ele = input ("Enter the element: ")
+    if ele == 'done': 
+        break
+    ele = int(ele)
+    l1.append(ele)
+
+for ele in l1:
+    if (ele > max):
+        max  = ele
+    if (ele < min):
+        min = ele
+print ("Maximum elements of ", l1, "is: ", max)
+print ("Minimum elements of ", l1, "is: ", min)
