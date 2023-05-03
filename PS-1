@@ -1,0 +1,14 @@
+n = int(input())  # number of students
+results = {}
+for i in range(n):
+    name, status = input().split()
+    results[name] = status
+
+# now we can process the queries
+m = int(input())  # number of queries
+for i in range(m):
+    name = input()
+    if name in results:
+        print(name, results[name], 'the exam')
+    else:
+        print('No Result Found')
