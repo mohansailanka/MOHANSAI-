@@ -1,0 +1,12 @@
+class Fibonacci:
+    def generate_sequence(self, n):
+        sequence = []
+        a, b = 0, 1
+        for i in range(n):
+            sequence.append(a)
+            a, b = b, a + b
+        return sequence
+n = int(input("Enter the number of terms to generate: "))
+fib = Fibonacci()
+sequence = fib.generate_sequence(n)
+print(f"The first {n} terms of the Fibonacci sequence are: {sequence}")
