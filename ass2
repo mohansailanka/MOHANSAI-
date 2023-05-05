@@ -1,0 +1,23 @@
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def sum_of_primes(n):
+    count = 0
+    prime_sum = 0
+    current_num = 2   
+    while count < n:
+        if is_prime(current_num):
+            prime_sum += current_num
+            count += 1
+        current_num += 1
+    
+    return prime_sum
+
+
+n = 10
+print("Sum of first", n, "prime numbers is:", sum_of_primes(n))
